@@ -1,16 +1,6 @@
 .box {
-    display: inline-block;
-    background: green;
-    height: 200px;
-    width: 200px;
     pointer-events: none;// this will prevent triggering any mouse event on this element
     transition: transform 300ms ease-in-out; // animation is defined before adding the trigger
-}
-.trigger {
-    width: 200px;
-    height: 200px;
-    background: #cccccc;
-    border: 10px solid greenyellow;
 }
 // Adding trigger for animation
 

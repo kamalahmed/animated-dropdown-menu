@@ -1,5 +1,21 @@
-@import 'transition';
+// @import 'transition';
+@import 'animation-keyframe';
+
 
 body {
     padding: 20px;
+}
+
+.box {
+    display: inline-block;
+    background: green;
+    height: 200px;
+    width: 200px;
+    
+}
+.trigger {
+    width: 200px;
+    height: 200px;
+    background: #cccccc;
+    border: 10px solid greenyellow;
 }
