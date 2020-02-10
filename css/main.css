@@ -1,40 +1,65 @@
-@-webkit-keyframes myframes {
-  0%, 30% {
-    height: 200px;
-    background: red;
-  }
-  40%, 100% {
-    width: 400px;
-    height: 400px;
-  }
-  100% {
-    height: 200px;
-    background: blue;
-  }
+a {
+  text-decoration: none;
 }
 
-@keyframes myframes {
-  0%, 30% {
-    height: 200px;
-    background: red;
-  }
-  40%, 100% {
-    width: 400px;
-    height: 400px;
-  }
-  100% {
-    height: 200px;
-    background: blue;
-  }
+nav {
+  padding: 50px;
+  text-align: center;
 }
 
-.box {
-  pointer-events: none;
+nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background: #eee;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
-.trigger:hover .box {
-  -webkit-animation: myframes 2s ease-in-out 0s infinite;
-          animation: myframes 2s ease-in-out 0s infinite;
+nav > ul > li {
+  padding: 0 30px;
+  height: 65px;
+  line-height: 65px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+nav > ul > li:hover {
+  background: #d5d5d5;
+  border-radius: 5px;
+}
+
+ul.drop-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+
+ul.drop-menu li {
+  background: #666;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ul.drop-menu li:hover {
+  background: #606060;
+}
+
+ul.drop-menu li:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+
+li:hover > ul.drop-menu {
+  display: block;
 }
 
 body {
