@@ -1,23 +1,28 @@
 // @import 'transition';
 //@import 'animation-keyframe';
-@import 'menu';
+@import "menu";
 
 body {
-    padding: 20px;
+  padding: 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(23, 157, 226, 1) 0%,
+    rgba(111, 185, 86, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .box {
-    display: inline-block;
-    background: green;
-    height: 200px;
-    width: 200px;
-    
+  display: inline-block;
+  background: green;
+  height: 200px;
+  width: 200px;
 }
 .trigger {
-    width: 200px;
-    height: 200px;
-    background: #cccccc;
-    border: 10px solid greenyellow;
+  width: 200px;
+  height: 200px;
+  background: #cccccc;
+  border: 10px solid greenyellow;
 }
-
-
